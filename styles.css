@@ -1,0 +1,250 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* css color variables */
+  --very-dark-blue: #070439;
+  --desaturated-blue: #585989;
+  --bright-blue: #3065f8;
+  --moderate-cyan: #3c9f8f;
+  --light-grayish-blue: #f6f6fe;
+  --light-gray: #bfbfbf;
+  /* css font variables and font weights*/
+  --font-heading-callToAction-header-nav: 'Raleway', arial, sans-serif;
+  --font-body: 'Open Sans', arial, sans-serif;
+  /* padding  */
+  --section-padding: 0 50px;
+}
+
+a{
+  /* removes underline */
+  text-decoration: none;
+  color: #000;
+}
+a:visited{
+  /* removes underline */
+  text-decoration: none;
+  color: #000;
+}
+
+/*---------- Header ----------*/
+
+header{
+  top: 0;
+  width: 100%;
+  height: 160px;
+  max-width: 1440px;
+  margin: 0 auto;
+  /* flex and align-items: center; to vertically align the content */
+  display: flex;
+  align-items: center;
+  /* flex and justify-content: center; aligns content horizontally */
+  justify-content: center;
+  padding: var(--section-padding);
+}
+
+nav{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#logo{
+  margin-left: 0px;
+  margin-right: auto;
+}
+
+ul{
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-heading-callToAction-header-nav);
+  font-weight: 400;
+  list-style: none;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+li{
+  margin-left: 50px;
+}
+
+/*---------- Header End ----------*/
+/* ------------------------------- */
+/*---------- Main Section 1 ----------*/
+
+#section1{
+  max-width: 1440px;
+  margin: 0 auto;
+  /* vertically centers section1-wrapper  */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#img1{
+  padding: var(--section-padding);
+  display: flex;
+  float: right;
+  clear: right;
+  max-width: 55%;
+}
+
+#section1-wrapper{
+  padding: var(--section-padding);
+  /* float: left; */
+  /* clear: left; */
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+}
+
+h1{
+  font-family: var(--font-heading-callToAction-header-nav);
+  font-weight: 700;
+  font-size: 2.13rem;
+  line-height: 140%;
+}
+
+p{
+  margin-top: 25px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+}
+
+#form-button-wrapper{
+  margin-top: 25px;
+}
+
+#form1{
+  /* display:flex; */
+  float: left;
+  /* display: inline-block; */
+  width: 250px;
+  height: 30px;
+  border-radius: 3px;
+
+}
+
+#input1{
+  /* display:flex; */
+  float: left;
+  /* display: inline-block; */
+  width: 250px;
+  height: 30px;
+  border-radius: 4px;
+  padding-left: 10px;
+  color: var(--light-gray);
+}
+
+#input1:focus{outline:0;}
+
+#button1{
+  /* float: right; */
+  /* display: inline-block; */
+  width: 150px;
+  height: 30px;
+  border-radius: 4px;
+  background-color: var(--bright-blue);
+  color: #fff;
+  margin-left: 12px;
+}
+
+button:focus{outline: 0;}
+
+
+
+
+/*---------- Main Section 1 End----------*/
+
+/* =================================== */
+/*---------- Media Queries ----------*/
+/* =================================== */
+
+@media(max-width: 700px){
+  /*---------  Mobile 700 Header ---------*/
+  header{
+  padding: 0  20px;
+  }
+
+  #logo{
+    width: 150px;
+  }
+
+  ul{
+  font-size: 1rem;
+  }
+
+  li{
+  margin-left: 30px;
+  }
+  /*---------  Mobile 700 Header End ---------*/
+  /*--------- Mobile 700 Section 1 ---------*/
+  #section1{
+    /* responsive */
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  #form-button-wrapper{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: none;
+    align-items: center;
+  }
+
+  #form1{
+    float: none;
+    width: 300px;
+  }
+  
+  #input1{
+    float: none;
+    width: 300px;
+    padding-left: 10px;
+  }
+  
+  #button1{
+    width: 300px;
+    height: 30px;
+    margin-left: 0px;
+  }
+}
+
+@media(max-width: 440px){
+  /*---------  Mobile 375 Header---------*/
+  header{
+    padding: 0  8px;
+    }
+  
+    #logo{
+      width: 100px;
+    }
+  
+    ul{
+    font-size: 1rem;
+    }
+  
+    li{
+    margin-left: 10px;
+    /* justify-content: flex-end; */
+    }
+  /*---------  Mobile 375 Header End ---------*/
+  /*--------- Mobile 375 Section 1 ---------*/
+  
+  #logo-wrapper{
+    display: flex-box;
+    /* width: 100px; */
+  }
+
+  #logo{
+    width: 110px;
+    margin: 0;
+  }
+}
+/* =================================== */
+/*---------- Media Queries End----------*/
+/* =================================== */
