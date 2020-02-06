@@ -78,7 +78,7 @@ li{
 
 #section1{
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 0 auto 200px;
   /* vertically centers section1-wrapper  */
   display: flex;
   flex-direction: row;
@@ -86,10 +86,10 @@ li{
 }
 
 #img1{
-  padding: var(--section-padding);
-  display: flex;
-  float: right;
-  clear: right;
+  /* padding: var(--section-padding); */
+  /* display: flex; */
+  /* float: right; */
+  /* clear: right; */
   max-width: 55%;
 }
 
@@ -110,8 +110,9 @@ h1{
 }
 
 p{
-  margin-top: 25px;
   font-family: var(--font-body);
+  font-weight: 400px;
+  margin-top: 25px;
   font-size: 1rem;
 }
 
@@ -126,7 +127,6 @@ p{
   width: 250px;
   height: 30px;
   border-radius: 3px;
-
 }
 
 #input1{
@@ -137,10 +137,10 @@ p{
   height: 30px;
   border-radius: 4px;
   padding-left: 10px;
-  color: var(--light-gray);
 }
 
-#input1:focus{outline:0;}
+input::placeholder{color: var(--light-gray);}
+input:focus{outline:0;}
 
 #button1{
   /* float: right; */
@@ -155,10 +155,160 @@ p{
 
 button:focus{outline: 0;}
 
+/*---------- Main Section 1 End ----------*/
+/*---------- Section 2 Start ----------*/
+
+#section2{
+  height: 700px;
+  max-width: 1440px;
+  margin: 200px auto 0 auto;
+  /* vertically centers section1-wrapper  */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* background-image: url(/Projects-In-Progress/fylo-light/images/bg-curve-desktop.svg); */
+}
+
+#background-purple{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* height: 900px; */
+}
+
+#section2-wrapper{
+  max-width: 800px;
+  padding: var(--section-padding);
+  float: left;
+  display: flex;
+  flex-direction: column;
+  /* z-index: 1; */
+}
+
+#section2-paragraph-wrapper{
+  max-width: 500px;
+}
+
+#section2-link-wrapper{
+  display: flex;
+}
+
+#section2-link{
+  margin: 20px 0;
+  font-family: var(--font-body);
+  font-weight: 400;
+  color: var(--moderate-cyan);
+  display: flex;
+  text-decoration: underline;
+}
+
+#section2-link:hover{
+  opacity: .8;
+}
+
+#arrow-svg{
+  margin: 3px 0;
+  width: 20px;
+}
+
+#testimonial-wrapper{
+  max-width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+#testimonial-avatar-wrapper{
+  display: flex;
+  margin-top: 15px;
+}
+
+#testimonial-avatar-text-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 6px;
+}
+
+#testimonial-paragraph{
+  margin: 5px 0;
+  font-size: .8rem;
+}
+
+#testimonial-avatar{
+  border-radius: 100px;
+  width: 50px;
+}
+
+#img2{
+  /* width: 600px; */
+  max-width: 43%;
+  margin-left: 100px;
+}
+
+/*----------  Section 2 End ----------*/
+/*----------  Section 3 Start ----------*/
+#section3{
+  background-color: var(--desaturated-blue);
+}
+
+#section3-wrapper{
+  height: 300px;
+  max-width: 1440px;
+  margin: 0 auto 200px;
+  /* vertically centers section1-wrapper  */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 
 
+#section3-text-wrapper{
+  padding: var(--section-padding);
+  color: var(--light-grayish-blue);
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+}
 
-/*---------- Main Section 1 End----------*/
+#form-button-wrapper{
+  margin-top: 25px;
+  padding: var(--section-padding);
+}
+
+#form2{
+  /* display:flex; */
+  float: left;
+  /* display: inline-block; */
+  width: 300px;
+  height: 40px;
+  border-radius: 3px;
+}
+
+#input2{
+  /* display:flex; */
+  float: left;
+  /* display: inline-block; */
+  width: 300px;
+  height: 40px;
+  border-radius: 4px;
+  padding-left: 10px;
+}
+
+#button2{
+  width: 200px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: var(--bright-blue);
+  color: #fff;
+  margin-left: 12px;
+  /* border-color: none; */
+  /* background-color: var(--bright-blue); */
+}
+
+/*----------  Section 3 End ----------*/
 
 /* =================================== */
 /*---------- Media Queries ----------*/
