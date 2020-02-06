@@ -4,10 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-  <!-- <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/v4-shims.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Fylo Landing Page</title>
   <link rel="stylesheet" href="css/styles.css">
@@ -18,10 +17,10 @@
   <header>
     <nav>
       <div id="logo-wrapper"><a href="#"><img id='logo' src="images/logo.svg" alt="logo"></a></div>
-      <ul>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Team</a></li>
-        <li><a href="#">Sign In</a></li>
+      <ul id='nav-ul'>
+        <li id='nav-li'><a class='nav-links' href="#">Features</a></li>
+        <li id='nav-li'><a class='nav-links' href="#">Team</a></liid='nav-li'>
+        <li id='nav-li'><a class='nav-links' href="#">Sign In</a></li>
       </ul>
     </nav>
   </header>
@@ -47,9 +46,9 @@
   <!-- Main Section 1 End-->
   <!-- Section 2 -->
 
-  <section id="section2">
-    <div id='background-purple'
-      style="background-image: url(images/bg-curve-desktop.svg); background-repeat: no-repeat; background-position: center; background-size: 330% 100%;">
+  <div id='background-purple'
+    style="background-image: url(images/bg-curve-desktop.svg); background-repeat: no-repeat; background-position: center; background-size: 330% 100%;">
+    <section id="section2">
       <div id="section2-wrapper">
         <h1>Stay productive, wherever you are</h1>
         <div id='section2-paragraph-wrapper'>
@@ -64,18 +63,19 @@
         </div>
 
         <div id='section2-link-wrapper'>
-          <a id='section2-link' href="#">See how Fylo works<img id='arrow-svg' src="images/icon-arrow.svg" alt=""></a>
+          <a id='section2-link' href="#">See how Fylo works<img id='arrow-svg' src="images/icon-arrow.svg"
+              alt="arrow icon"></a>
         </div>
 
         <div id='testimonial-wrapper'>
-          <img src="images/icon-quotes.svg" alt="">
+          <img src="images/icon-quotes.svg" alt="quote icon">
           <p id='testimonial-paragraph'>
             Fylo has improved our team productivity by an order of magnitude. Since
             making the switch our team has become a well-oiled collaboration machine.
           </p>
 
           <div id='testimonial-avatar-wrapper'>
-            <img id='testimonial-avatar' src="images/avatar-testimonial.jpg" alt="">
+            <img id='testimonial-avatar' src="images/avatar-testimonial.jpg" alt="avatar">
             <div id='testimonial-avatar-text-wrapper'>
               <h4>Kyle Burton</h4>
               <h5>Founder & CEO, Huddle</h5>
@@ -85,10 +85,10 @@
 
       </div>
 
-      <img id='img2' src="images/illustration-2.svg" alt="">
-    </div>
+      <img id='img2' src="images/illustration-2.svg" alt="fylo image 2">
+    </section>
+  </div>
 
-  </section>
   <!-- Section 2 End-->
   <!-- Section 3 -->
   <section id='section3'>
@@ -108,17 +108,46 @@
   </section>
   <!-- Section 3 End-->
   <!-- Footer -->
-  <!-- <footer>
-    <img #="footer-logo" src="images/logo.svg" alt="">
-  </footer> -->
+  <footer>
+    <div id="footer-wrapper">
+      <div id='footer-logo-wrapper'>
+        <a href="#"><img #="footer-logo" src="images/logo-white.svg" alt="logo"></a>
+      </div>
+      <div id='footer-links-wrapper'>
+        <ul class='footer-nav-ul'>
+          <li class="footer-nav-li">
+            <a class='footer-links' href="#"><img class="footer-contact-icons" src="images/icon-phone.svg" alt="phone icon"> Phone:
+              +1-543-123-4567</a>
+          </li>
+          <li class="footer-nav-li">
+            <a class='footer-links' href="#"><img class="footer-contact-icons" src="images/icon-email.svg" alt="email icon"> example@fylo.com</a>
+          </li>
+        </ul>
+        <ul class='footer-nav-ul'>
+          <li class="footer-nav-li"><a class='footer-links' href="">About Us</a></li>
+          <li class="footer-nav-li"><a class='footer-links' href="">Jobs</a></li>
+          <li class="footer-nav-li"><a class='footer-links' href="">Press</a></li>
+          <li class="footer-nav-li"><a class='footer-links' href="">Blog</a></li>
+        </ul>
+        <ul class='footer-nav-ul'>
+          <li class="footer-nav-li"><a class='footer-links' href="">Contact Us</a></li>
+          <li class="footer-nav-li"><a class='footer-links' href="">Terms</a></li>
+          <li class="footer-nav-li"><a class='footer-links' href="">Privacy</a></li>
+        </ul>
+        <ul id='footer-social-nav-ul'>
+          <li class="footer-social-nav-li"><a class='footer-links' href=""><i class="fab fa-facebook"></i></a></li>
+          <li class="footer-social-nav-li"><a class='footer-links' href=""><i class="fab fa-twitter"></i></a></li class="footer-social-nav-li"></a></li>
+          <li class="footer-social-nav-li"><a class='footer-links' href=""><i class="fab fa-instagram"></i></a></li></a></li>
+        </ul>
+      </div>
+    </div>
+        <!-- <p class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="#">Your Name Here</a>.
+        </p> -->
+  </footer>
   <!-- Footer End -->
 
-  <!-- <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer> -->
 </body>
 
 </html>
