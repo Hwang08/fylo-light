@@ -183,7 +183,7 @@ button:focus{outline: 0;}
 #section2{
   height: 700px;
   max-width: 1440px;
-  /* margin: 200px auto 0 auto; */
+  margin: 0 auto;
   /* vertically centers section2  */
   display: flex;
   flex-direction: row;
@@ -230,6 +230,7 @@ button:focus{outline: 0;}
   padding: 20px;
   border-radius: 10px;
   background-color: #fff;
+  box-shadow: 0 0 7px .04px ;
 }
 
 #testimonial-avatar-wrapper{
