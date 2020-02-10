@@ -3,4 +3,4 @@
 - HTML 5
 - CSS 3
 
-Working on making site responsive.
+Responsive version coming soon ...
