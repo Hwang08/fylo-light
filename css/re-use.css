@@ -1,0 +1,84 @@
+
+@media(max-width: 700px){
+  /*---------  Mobile 700 Header ---------*/
+  header{
+  padding: 0  20px;
+  }
+
+  #logo{
+    width: 150px;
+  }
+
+  /* ul{
+  font-size: 1rem;
+  }
+
+  li{
+  margin-left: 30px;
+  } */
+  /*---------  Mobile 700 Header End ---------*/
+  /*--------- Mobile 700 Section 1 ---------*/
+  /* #section1{
+    flex-direction: column;
+    flex-wrap: wrap;
+  } */
+
+  /* #form-button-wrapper{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: none;
+    align-items: center;
+  } */
+
+  #form1{
+    float: none;
+    width: 300px;
+  }
+  
+  #input1{
+    float: none;
+    width: 300px;
+    padding-left: 10px;
+  }
+  
+  #button1{
+    width: 300px;
+    height: 30px;
+    margin: 0;
+  }
+}
+
+
+
+@media(max-width: 440px){
+  /*---------  Mobile 375 Header---------*/
+  header{
+    padding: 0  8px;
+    }
+  
+    #logo{
+      width: 100px;
+    }
+  
+    ul{
+    font-size: 1rem;
+    }
+  
+    li{
+    margin-left: 10px;
+    /* justify-content: flex-end; */
+    }
+  /*---------  Mobile 375 Header End ---------*/
+  /*--------- Mobile 375 Section 1 ---------*/
+  
+  #logo-wrapper{
+    display: flex-box;
+    /* width: 100px; */
+  }
+
+  #logo{
+    width: 110px;
+    margin: 0;
+  }
+}
+  /*--------- Mobile 375 Section 1 End ---------*/

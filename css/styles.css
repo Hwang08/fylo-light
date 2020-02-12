@@ -16,7 +16,9 @@
   --font-heading-callToAction-header-nav: 'Raleway', arial, sans-serif;
   --font-body: 'Open Sans', arial, sans-serif;
   /* padding  */
-  --section-padding: 0 50px;
+  --section-padding: 0 0 0 50px;
+  --section-padding-mobile: 0 25px;
+  --header-padding: 0 50px;
 }
 
 a{
@@ -34,8 +36,6 @@ ul{
   list-style: none;
 }
 
-/*---------- Header ----------*/
-
 header{
   top: 0;
   width: 100%;
@@ -47,7 +47,7 @@ header{
   align-items: center;
   /* flex and justify-content: center; aligns content horizontally */
   justify-content: center;
-  padding: var(--section-padding);
+  padding: var(--header-padding);
 }
 
 nav{
@@ -56,6 +56,21 @@ nav{
   align-items: center;
   justify-content: space-between;
 }
+
+h1{
+  font-family: var(--font-heading-callToAction-header-nav);
+  font-weight: 700;
+  font-size: 2.13rem;
+  line-height: 140%;
+}
+
+p{
+  font-family: var(--font-body);
+  font-weight: 400px;
+  margin-top: 25px;
+  font-size: 1rem;
+}
+/*---------- Header ----------*/
 
 #logo{
   margin-left: 0px;
@@ -86,12 +101,15 @@ nav{
 /*---------- Main Section 1 ----------*/
 
 #section1{
+  max-height: 700px;
   max-width: 1440px;
   margin: 0 auto 200px;
   /* vertically centers section1-wrapper  */
   display: flex;
+  /* flex-wrap: wrap; */
   flex-direction: row;
   align-items: center;
+  justify-content: space-around;
 }
 
 #img1{
@@ -99,36 +117,25 @@ nav{
   /* display: flex; */
   /* float: right; */
   /* clear: right; */
-  /* max-width: 55%; */
-  width: 55%;
+  max-width: 50%;
+  right: 0;
+  margin: 0 auto;
+  /* margin-left: 50px; */
 }
 
 #section1-wrapper{
+  max-width: 600px;
   padding: var(--section-padding);
-  /* float: left; */
-  /* clear: left; */
+  float: left;
   display: flex;
   flex-direction: column;
-  max-width: 600px;
-}
 
-h1{
-  font-family: var(--font-heading-callToAction-header-nav);
-  font-weight: 700;
-  font-size: 2.13rem;
-  line-height: 140%;
-}
-
-p{
-  font-family: var(--font-body);
-  font-weight: 400px;
-  margin-top: 25px;
-  font-size: 1rem;
 }
 
 #form-button-wrapper{
   margin-top: 25px;
   display:flex;
+  flex: wrap;
   /* flex-direction: row; */
 }
 
@@ -170,19 +177,16 @@ button:focus{outline: 0;}
 /*---------- Main Section 1 End ----------*/
 /*---------- Section 2 Start ----------*/
 
-#background-purple{
+#background-purple-desktop{
   width: 100%;
-  height: 800px;
+  height: 1000px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-image: url(images/bg-curve-desktop.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 330% 100%;
 }
+
 #section2{
-  height: 700px;
+  max-height: 700px;
   max-width: 1440px;
   margin: 0 auto;
   /* vertically centers section2  */
@@ -192,12 +196,12 @@ button:focus{outline: 0;}
 }
 
 #section2-wrapper{
+  max-height: 700px;
   max-width: 800px;
   padding: var(--section-padding);
   float: left;
   display: flex;
   flex-direction: column;
-  /* z-index: 1; */
 }
 
 #section2-paragraph-wrapper{
@@ -239,6 +243,11 @@ button:focus{outline: 0;}
   margin-top: 15px;
 }
 
+#testimonial-avatar{
+  border-radius: 100px;
+  width: 50px;
+}
+
 #testimonial-avatar-text-wrapper{
   display: flex;
   flex-direction: column;
@@ -251,13 +260,7 @@ button:focus{outline: 0;}
   font-size: .8rem;
 }
 
-#testimonial-avatar{
-  border-radius: 100px;
-  width: 50px;
-}
-
 #img2{
-  /* width: 600px; */
   max-width: 43%;
   margin-left: 100px;
 }
@@ -266,10 +269,13 @@ button:focus{outline: 0;}
 /*----------  Section 3 Start ----------*/
 #section3{
   background-color: var(--desaturated-blue);
+  /* max-height: 500px; */
+  padding: 100px 0;
 }
 
 #section3-wrapper{
-  height: 300px;
+  /* max-height: 300px; */
+  /* height: 300px; */
   max-width: 1440px;
   margin: 0 auto;
   /* vertically centers section3-wrapper  */
@@ -330,10 +336,11 @@ footer{
   bottom: 0;
   width: 100%;
   background-color: var(--very-dark-blue);
+  padding: 50px 0;
 }
 
 #footer-wrapper{
-  height: 350px;
+  max-height: 350px;
   max-width: 1440px;
   margin: 0 auto;
   padding: var(--section-padding);
@@ -348,20 +355,25 @@ footer{
   display: block;
   left: 0;
   margin-right: auto;
+  /* margin-top: 50px; */
 }
 
 #footer-links-wrapper{
   /* max-width: 1440px; */
   /* margin: 0 auto; */
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  /* justify-content: space-between; */
+  /* flex-basis: 10em; */
+  /* justify-content: space-between;
+  justify-content: space-around; */
   left: 0;
-  margin: 15px auto 0 0;
+  margin: 30px auto 0 0;
 }
 
 .footer-nav-ul{
   margin-right: 200px;
+  /* margin-top: 50px; */
   /* display: flex; */
   /* flex-direction: row; */
   /* justify-content: space-between; */
@@ -381,10 +393,11 @@ footer{
 #footer-social-nav-ul{
   font-size: 1.9rem;
   display: flex;
+  margin-top: 15px;
 }
 
 .footer-social-nav-li{
-  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .footer-social-icons{
@@ -411,33 +424,137 @@ footer{
 /*---------- Media Queries ----------*/
 /* =================================== */
 
-@media(max-width: 1100px){
+@media(max-width:1270px){
+  /*---------- Mobile 1270px Section 3 Start---------- */
+
+  #form-button-wrapper2{
+    padding: 0 25px 0 0;
+    /* right: 0; */
+    margin-left: auto;
+  }
+  /*---------- Mobile 1270px Section 3 End ---------- */
+
+  /*---------- Mobile 1270px Footer Start ---------- */
+  #footer-links-wrapper{
+    width: 100%;
+    justify-content: space-between;
+
+  }
+  .footer-nav-ul{
+    left: 0;
+    margin-right: auto;
+  }
+  /*---------- Mobile 1270px Footer End ----------*/
+}
+
+@media(max-width: 1220px){
+/*---------- Mobile 1220px Section 1 ----------*/
+  #img1{
+    max-width: 40%;
+  }
+/*---------- Mobile 1220px Section 1 End----------*/
+}
+
+@media(max-width: 1140px){
+  /*---------- Mobile 1220px Section 1 Start----------*/
+  #button1{
+    width: 350px;
+  }
+  /*---------- Mobile 1220px Section 1 End----------*/
+  /*---------- Mobile 1220px Section 3 Start----------*/
+  #form-button-wrapper2{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #form2{
+    width: 350px;
+  }
+
+  #input2{
+    width: 350px;
+  }
+
+  #button2{
+    margin-left: 0;
+    margin-top: 10px;
+    width: 350px;
+  }
+  /*---------- Mobile 1220px Section 3 End----------*/
 
 }
 
-@media(max-width: 700px){
-  /*---------  Mobile 700 Header ---------*/
-  header{
-  padding: 0  20px;
-  }
-
-  #logo{
-    width: 150px;
-  }
-
-  ul{
-  font-size: 1rem;
-  }
-
-  li{
-  margin-left: 30px;
-  }
-  /*---------  Mobile 700 Header End ---------*/
-  /*--------- Mobile 700 Section 1 ---------*/
+@media(max-width: 1015px){
+/*---------- Mobile 1015px Section 1 ----------*/
   #section1{
-    /* responsive */
+    /* margin-top: 100px; */
+    /* margin-bottom: 300px; */
+  }
+
+  #img1{
+    max-width: 35%;
+  }
+/*---------- Mobile 1015px Section 1 End----------*/
+/*---------- Mobile 1015px Section 2 Start----------*/
+
+/*---------- Mobile 1015px Section 2 End----------*/
+/*---------- Mobile 1015px Section 3 Start----------*/
+  #section3-text-wrapper{
+    padding: 0;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  #section3-wrapper{
     flex-direction: column;
-    flex-wrap: wrap;
+  }
+
+  #form-button-wrapper2{
+    margin: 0;
+    padding: 0;
+  }
+/*---------- Mobile 1015px Section 3 End----------*/
+}
+
+@media(max-width: 940px){
+  /*---------- Mobile 940px Section 1 ----------*/
+    #section1{
+      flex-direction: column;
+      margin-top: 50px;
+      /* padding: 25px 0; */
+    }
+  
+    #img1{
+      max-width: 60%;
+      order: 1;
+      /* margin-top: 50px; */
+      padding-bottom: 90px;
+    }
+  
+    #section1-wrapper{
+      order: 2;
+      padding-left: 0;
+    }
+  /*---------- Mobile 940px Section 1 End----------*/
+}
+
+@media(max-width: 785px){
+/*---------- Mobile 785px Header Start----------*/
+  header{
+    padding: 0 20px;
+  }
+  #nav-ul{
+    justify-content: flex-end;
+  }
+  
+  #nav-li{
+    margin-left: 20px;
+    /* flex-basis: auto; */
+  }
+/*---------- Mobile 785px Header End----------*/
+/*---------- Mobile 785px Section 1 Start----------*/
+  #section1-wrapper{
+    padding: var(--section-padding-mobile);
   }
 
   #form-button-wrapper{
@@ -448,57 +565,108 @@ footer{
   }
 
   #form1{
-    float: none;
-    width: 300px;
+    width: 350px;
+    height: 45px;
   }
-  
+
   #input1{
-    float: none;
-    width: 300px;
-    padding-left: 10px;
+    width: 350px;
+    height: 45px;
   }
-  
+
   #button1{
-    width: 300px;
-    height: 30px;
-    margin-left: 0px;
+    margin: 10px 0 0 0;
+    height: 45px;
   }
-}
-
-
-
-@media(max-width: 440px){
-  /*---------  Mobile 375 Header---------*/
-  header{
-    padding: 0  8px;
-    }
+/*---------- Mobile 785px Section 1 End----------*/
+/*---------- Mobile 785px Section 2 Start----------*/
+  /* #background-purple-desktop{
+    max-height: 2000px;
+  } */
   
-    #logo{
-      width: 100px;
-    }
-  
-    ul{
-    font-size: 1rem;
-    }
-  
-    li{
-    margin-left: 10px;
-    /* justify-content: flex-end; */
-    }
-  /*---------  Mobile 375 Header End ---------*/
-  /*--------- Mobile 375 Section 1 ---------*/
-  
-  #logo-wrapper{
-    display: flex-box;
-    /* width: 100px; */
+  #section2{
+    flex-direction: column;
+    max-height: 2000px;
+    padding: 20px 0px;
   }
 
-  #logo{
-    width: 110px;
+  #img2{
+    /* width: 95%; */
+    width: 900px;
+    order: 1;
     margin: 0;
   }
+
+  #section2-wrapper{
+    order: 2;
+    margin-top: 70px;
+    padding: var(--section-padding-mobile);
+    /* padding-left: 0; */
+    align-items: center;
+  }
+  
+  #section2-paragraph-wrapper{
+    margin-top: 20px;
+  }
+
+  #section2-link-wrapper{
+    padding: 30px 0;
+  }
+
+/*---------- Mobile 785px Section 2 End----------*/
+/*---------- Mobile 785px Section 3 Start----------*/
+  /* #section3{
+    padding: var(--section-padding-mobile);
+  } */
+
+  #section3-wrapper{
+    flex-direction: column;
+    padding: var(--section-padding-mobile);
+
+  }
+
+  #section3-text-wrapper{
+    margin-bottom: 30px;
+  }
+
+  #form-button-wrapper2{
+    margin: 0;
+    padding: 0;
+  }
+
+/*---------- Mobile 785px Section 3 End----------*/
+/*---------- Mobile 785px Footer Start----------*/
+  footer{
+    height: 630px;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+  }
+
+  #footer-wrapper{
+    max-height: 630px;
+
+  }
+
+  #footer-links-wrapper{
+    height: 100%;
+    flex-direction: column;
+    flex-wrap: none;
+    justify-content: center;
+    left: none;
+  }
+
+  .footer-nav-ul{
+    /* margin: 0 0 15px 0; */
+    margin-bottom: 30px;
+  }
+
+  #footer-social-nav-ul{
+    justify-content: center;
+  }
+/*---------- Mobile 785px Footer End----------*/
 }
-  /*--------- Mobile 375 Section 1 End ---------*/
+
 
 /* =================================== */
 /*---------- Media Queries End----------*/
