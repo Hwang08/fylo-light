@@ -539,21 +539,36 @@ footer{
 }
 
 @media(max-width: 785px){
+  #h1-mobile{
+    text-align: center;
+  }
+
+  #p-mobile{
+    text-align: center;
+  }
+
 /*---------- Mobile 785px Header Start----------*/
   header{
     padding: 0 20px;
   }
+
   #nav-ul{
-    justify-content: flex-end;
+    width: 100%;
+    justify-content: space-evenly;
   }
   
   #nav-li{
-    margin-left: 20px;
+    /* display: flex; */
+    /* flex: 1 1 5em; */
+    margin: 0;
+    /* margin-left: 20px; */
+    /* margin-left: 20px; */
     /* flex-basis: auto; */
   }
 /*---------- Mobile 785px Header End----------*/
 /*---------- Mobile 785px Section 1 Start----------*/
   #section1-wrapper{
+    padding: 0 25px;
     padding: var(--section-padding-mobile);
   }
 
@@ -562,6 +577,7 @@ footer{
     flex-direction: column;
     flex-wrap: none;
     align-items: center;
+    margin-top: 50px
   }
 
   #form1{
@@ -665,6 +681,92 @@ footer{
     justify-content: center;
   }
 /*---------- Mobile 785px Footer End----------*/
+}
+
+@media(max-width: 500px){
+  /*---------- Mobile 500px Header Start----------*/
+
+  #logo{
+    height: 40px;
+    width: 100px;
+  }
+  
+  #nav-ul{
+    font-size: 1em;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  
+  #nav-li{
+    /* display: flex; */
+    /* flex: 1 1 5em; */
+    /* margin: 0; */
+    /* margin-left: 20px; */
+    margin-left: 20px;
+    /* flex-basis: auto; */
+  }
+  /*---------- Mobile 500px Header End----------*/
+}
+
+@media(max-width: 410px){
+  #h1-mobile{
+    padding: 0 15px;
+  }
+  #p-mobile{
+    padding: 0 15px;
+  }
+
+  /*---------- Mobile 410px Section1 Start----------*/
+  #section1-wrapper{
+    max-width: none;
+    padding: 0;
+  }
+
+  #form1{
+    width: 300px;
+  }
+  #input1{
+    width: 300px;
+  }
+  #button1{
+    width: 300px;
+  }
+
+  /*---------- Mobile 410px Section1 End----------*/
+  /*---------- Mobile 410px Section2 Start----------*/
+  #section2{
+    padding: 0;
+  }
+
+  #section2-wrapper{
+    padding: 0;
+  }
+  /*---------- Mobile 410px Section2 End----------*/
+  /*---------- Mobile 410px Section3 Start----------*/
+  #section3-wrapper{
+    padding: 0;
+  }
+
+  #form2{
+    width: 300px;
+  }
+  #input2{
+    width: 300px;
+  }
+  #button2{
+    width: 300px;
+  }
+  /*---------- Mobile 410px Section3 End----------*/
+}
+
+@media(max-width: 360px){
+  #logo{
+    width: 90px;
+  }
+  
+  #nav-ul{
+    font-size: .8em;
+  }
 }
 
 
