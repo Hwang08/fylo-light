@@ -2,5 +2,3 @@
 
 - HTML 5
 - CSS 3
-
-Responsive version coming soon ...
